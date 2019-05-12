@@ -14,7 +14,6 @@ class Main extends Component {
                 <Route exact path="/profile" component={Profile}/>
                 <Route exact path="/contact" component={Contact}/>
                 <Route exact path="/portofolio" component={Portofolio}/>
-
             </Switch>
         );
         }

@@ -4,7 +4,11 @@ import MyCard from'./myCard';
 class Profile extends Component {
     render(){
         return (
-                <MyCard/>
+                <div>
+                        <MyCard/>
+                </div>
+                
+                
         );
         }
 }

@@ -34,7 +34,7 @@ class AnotherAppBar extends React.Component {
     return (
       <nav className="menuBar">
         <div className="menuCon">
-            <div className="leftMenu">
+            <div className="rightMenu">
             <Menu mode="horizontal">
             {this.state.menu.map((data) => {
                 return(

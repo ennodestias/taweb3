@@ -11,15 +11,8 @@ function App() {
   return (
     <div>
       <AnotherAppBar/>
-      <Row guter={8}>
-        <Col offset={4} span={16}>
-          <br/>
-          <Main/>
-        </Col>
-      </Row>
+      <Main />
     </div>
-
-
   );
 }
 
