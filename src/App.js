@@ -11,8 +11,10 @@ function App() {
   return (
     <div>
       <AnotherAppBar/>
-      <Main />
+          <Main/>
     </div>
+
+
   );
 }
 

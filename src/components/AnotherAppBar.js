@@ -12,15 +12,15 @@ class AnotherAppBar extends React.Component {
         super();
         this.state = {
             menu : [
-                {url:'/home', name:'Home'},
-                {url:'/profile', name:'Profile'},
+                {url:'/portofolio', name:'Portofolio'},
                 {url:'/contact', name:'Contact'},
-                {url:'/portofolio', name:'Portofolio'}
+                {url:'/profile', name:'Profile'},
+                {url:'/home', name:'Home'}
             ]
         }
     }
   state = {
-    current: 'mail',
+    current: 'Home',
   }
 
   handleClick = (e) => {
@@ -38,7 +38,7 @@ class AnotherAppBar extends React.Component {
             <Menu mode="horizontal">
             {this.state.menu.map((data) => {
                 return(
-                    <Menu.Item key={data.name}>
+                    <Menu.Item key={data.name} style={{float: "right"}}>
                         <Link to={data.url}>{data.name}</Link>
                     </Menu.Item>
                     )

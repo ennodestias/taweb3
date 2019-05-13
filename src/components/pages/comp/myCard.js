@@ -5,6 +5,7 @@ import 'antd/dist/antd.css';
 import { Card, Col, Row } from 'antd';
 import { Icon } from 'antd';
 import { Steps } from 'antd';
+import { Timeline } from 'antd';
 
 const { Meta } = Card;
 const Step = Steps.Step;
@@ -45,11 +46,24 @@ class myCard extends React.Component {
                 </Steps>
             </Card>
             <Card title="Experience" bordered={false}>
-                <Steps current={3}>
-                  <Step title="2011-2014" description="Junior High School 1 Nganjuk" />
-                  <Step title="2014-2017" description="Senior High School 1 Nganjuk" />
-                  <Step title="2017-Now" description="Universitas Gadjah Mada" />
-                </Steps>
+            <Timeline>
+                <Timeline.Item color="green">
+                  <p>2017</p>
+                  <p>HIMAKOMSI</p>
+                </Timeline.Item>
+                <Timeline.Item color="green">
+                  <p>2018</p>
+                  <p>Co-Facilitator PPSMB Universal</p>
+                </Timeline.Item>
+                <Timeline.Item color="green">
+                  <p>2018</p>
+                  <p>Kesekretariatan TED</p>
+                </Timeline.Item>
+                <Timeline.Item color="red">
+                  <p>2018 & 2019</p>
+                  <p>VOCOMFEST</p>
+                </Timeline.Item>
+            </Timeline>
             </Card>
           </Card>
         );

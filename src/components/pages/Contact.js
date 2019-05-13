@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
-import MyContact from './myContact';
+import MyContact from './comp/myContact';
+import {Row, Col} from 'antd';
 
 class Contact extends Component {
     render(){
         return (
-            <MyContact/>
+            <div>
+            <Row guter={8}>
+                    <Col offset={4} span={16}>
+                    <MyContact/> 
+                    </Col>
+            </Row>
+            </div>
         );
         }
 }
