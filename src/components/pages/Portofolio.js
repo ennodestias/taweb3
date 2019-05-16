@@ -5,7 +5,7 @@ import web1 from '../web1.png';
 import pap from '../pap.png';
 import de from '../de.png';
 import pap2 from '../pap2.png';
-
+import Animate from 'react-smooth';
 
 class Portofolio extends Component {
     render(){
@@ -16,19 +16,25 @@ class Portofolio extends Component {
                         <Col offset={4} span={16}>
                         <h1>My Latest Work</h1>
                             <Row>
-                                <Col span={24}>
-                                <Carousel autoplay>
-                                <Article width="100%" title="Wedding Cake Web" desc="Tugas Akhir untuk mata kuliah Praktikum Web 1" gambar={web1}/>
-                                <Article width="100%" title="UI/UX App DeliCake" desc="UI/UX design Aplikasi DeliCake untuk mata kuliah Praktikum Perancangan Antarmuka Pengguna" gambar={pap}/>
-                                <Article width="100%" title="Lowpoly" desc="Lowpoly untuk tugas Desain Elementer" gambar={de}/>
-                                <Article width="100%" title="UX Restoku" desc="UX Mesin Kasir untuk Restoran" gambar={pap2}/>
-                                </Carousel>
+                                <Animate to="0" from="1" attributeName="opacity">
+                                <Col span={8}>
+                                    <Article width="80%" title="Wedding Cake Web" desc="Tugas Akhir untuk mata kuliah Praktikum Web 1" gambar={web1}/>
                                 </Col>
+                                </Animate>
+                                <Animate to="0" from="1" attributeName="opacity">
+                                <Col span={8}>
+                                    <Article width="80%" title="UI/UX App DeliCake" desc="UI/UX design Aplikasi DeliCake untuk mata kuliah Praktikum Perancangan Antarmuka Pengguna" gambar={pap}/>
+                                </Col>
+                                </Animate>
+                                <Animate to="0" from="1" attributeName="opacity">
+                                <Col span={8}>
+                                    <Article width="80%" title="UX Restoku" desc="UX Mesin Kasir untuk Restoran" gambar={pap2}/>
+                                </Col>
+                                </Animate>
                             </Row>
-                            <br/>
                         </Col>
                     </Row>
-                </div>  
+                </div>
             </div>
         );
         }

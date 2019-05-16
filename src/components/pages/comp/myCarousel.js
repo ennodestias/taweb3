@@ -3,16 +3,25 @@ import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import 'antd/dist/antd.css';
 import './MyCarousel.css';
+import Typist from 'react-typist';
 
 
 class myCarousel extends React.Component {
+    next(){
+
+    }
     render(){
         return(
+            <div>
             <Carousel autoplay>
-                <div><img width="100%" height="610px" src="https://wallpaperplay.com/walls/full/8/8/a/78866.jpg" /></div>
-                <div><img width="100%" height="610px" src="https://images.unsplash.com/photo-1532376413372-100a02226622?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" /></div>
-                <div><img width="100%" height="610px" src="https://rumbi.com/wp-content/uploads/2017/05/island-beach-wallpaper-1.jpg" /></div>
+                <div>
+                    <Typist className="new" onTypingDone={this.next}>Welcome To My Blog!</Typist>
+                </div>
+                              
             </Carousel>
+            </div>
+            
+
             );
         }
     }

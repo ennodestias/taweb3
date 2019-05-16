@@ -2,7 +2,6 @@ import { Drawer, Menu, Icon } from 'antd';
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {Link} from "react-router-dom";
-import 'antd/dist/antd.css';
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;

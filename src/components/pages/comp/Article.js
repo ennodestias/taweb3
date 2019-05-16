@@ -10,8 +10,8 @@ class Article extends React.Component {
       return(
               <Card
                 hoverable
-                style={{ width: this.props.width }}
-                cover={<img src={this.props.gambar} height="this.props.height" />}
+                style={{ width: this.props.width, height: this.props.height }}
+                cover={<img src={this.props.gambar} />}
               >
                 <Meta
                   title={this.props.title}
