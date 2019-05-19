@@ -1,4 +1,4 @@
-import { Carousel } from 'antd';
+import { Carousel, Icon, Card, Col, Row } from 'antd';
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import 'antd/dist/antd.css';
@@ -15,7 +15,17 @@ class myCarousel extends React.Component {
             <div>
             <Carousel autoplay>
                 <div>
-                    <Typist className="new" onTypingDone={this.next}>Welcome To My Blog!</Typist>
+                {/* <Typist className="new" onTypingDone={this.next}>HELLO!</Typist> */}
+                    <Row>
+                        <Col span={16}>
+                            <img className="gambar" src="https://www.hostgator.com/static/img/index/hero_screens_mob.png"/>
+                        </Col>
+                        <Col span={8}>
+                            <Card bordered={false} style={{paddingRight:230, paddingTop:100}}> 
+                                <p className="cheer">HELLO<p className="even">"Even miracles take a little time"</p></p>
+                            </Card>    
+                        </Col>
+                    </Row>
                 </div>
                               
             </Carousel>

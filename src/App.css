@@ -33,11 +33,11 @@
 }
 
 .footer{
-  background-color: white;
-  color:black;
+  background-color:black;
+  color:white;
   align-items: center;
   align-content: center;
-  height: 100px;
+  height: 300px;
   border-top-color: #282c34;
   border-color: #282c34;
 }

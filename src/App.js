@@ -17,15 +17,20 @@ function App() {
         <Main/>
           <Layout>
             <Footer className="footer">
-              <Row gutter={8}>
+              <Row>
                 <center>
-                  <Col span={8} offset={8}>
-                    <Icon type="facebook" style={{fontSize: '25px'}} />
-                    <Icon type="twitter" style={{fontSize: '25px'}} />
+                  <Col span={24}>
+                    <Icon type="facebook" style={{fontSize: '25px'}} /> &nbsp;&nbsp;
+                    <Icon type="twitter" style={{fontSize: '25px'}} />&nbsp;&nbsp;
                     <Icon type="instagram" style={{fontSize: '25px'}} />
                   </Col>
                   </center>
               </Row>
+              <br/>
+              <center>
+              <p>Made by Pure Heart&nbsp;<Icon type="copyright" /> 2019</p>
+              </center>
+              
             </Footer>
           </Layout>
     </div>

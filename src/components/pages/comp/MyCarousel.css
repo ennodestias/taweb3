@@ -2,7 +2,7 @@
     text-align: center;
     height: 608px;
     line-height: 160px;
-    background: url("https://images.wallpaperscraft.com/image/headphones_minimalism_pastel_122007_3840x2400.jpg");
+    background:white;
     overflow: hidden;
     background-position: center;
   background-repeat: no-repeat;
@@ -14,12 +14,33 @@
   }
 
   .pink{
-    background:#e41749;
+    background:#d7f7f5;
     height: 608px;
   }
 
   .new{
     font-size: 60px;
     text-align: right;
+    color:#142d4c;
+  }
+
+  .icon{
     color: #fff;
+    size: 20px;
+    float:right;
+  }
+
+  .gambar{
+    padding-left: 250px;
+    padding-top: 100px;
+  }
+
+  .cheer{
+    font-size: 50px;
+    color: #142d4c;
+  }
+
+  .even{
+    font-size: 20px;
+  
   }
